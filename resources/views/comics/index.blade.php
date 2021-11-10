@@ -20,7 +20,7 @@
                     <td>{{$comic->title}}</td>
                     <td>{{$comic->description}}</td>
                     <td>{{$comic->thumb}}</td>
-                    <td>{{$comic->price}}</td>
+                    <td>{{$comic->price}}&#x20AC;</td>
                     <td>{{$comic->series}}</td>
                     <td>{{$comic->sale_date}}</td>
                     <td>{{$comic->type}}</td>
