@@ -75,7 +75,6 @@ main {
 
             }
         }
-
         img {
             position: absolute;
             bottom: 30%;
@@ -87,6 +86,7 @@ main {
             transform-style: preserve-3d;
         }
     }
+    
 
     form {
         .form__group {
@@ -117,109 +117,91 @@ main {
             }
         }
     }
-}
 
-@-webkit-keyframes spinner {
-    0% { 
-       -webkit-transform: rotate3d(1, 1, 1, 0deg);
-	   -ms-transform: rotate3d(1, 1, 1, 0deg);
-	   -o-transform: rotate3d(1, 1, 1, 0deg);
-	   transform: rotate3d(1, 1, 1, 0deg);
-    }
-    50% { 
-       -webkit-transform: rotate3d(1, 1, 1, 180deg);
-	   -ms-transform: rotate3d(1, 1, 1, 180deg);
-	   -o-transform: rotate3d(1, 1, 1, 180deg);
-	   transform: rotate3d(1, 1, 1, 180deg);
-    }
-    100% { 
-        -webkit-transform: rotate3d(1, 1, 1, 360deg);
-	   -ms-transform: rotate3d(1, 1, 1, 360deg);
-	   -o-transform: rotate3d(1, 1, 1, 360deg);
-	   transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
+    .welcome__list {
+        width: 100%;
+        height: calc(100vh - 1.2875rem);
+        overflow-y: hidden;
 
-@-moz-keyframes spinner{
-    0% { 
-       -webkit-transform: rotate3d(1, 1, 1, 0deg);
-	   -ms-transform: rotate3d(1, 1, 1, 0deg);
-	   -o-transform: rotate3d(1, 1, 1, 0deg);
-	   transform: rotate3d(1, 1, 1, 0deg);
-    }
-    50% { 
-       -webkit-transform: rotate3d(1, 1, 1, 180deg);
-	   -ms-transform: rotate3d(1, 1, 1, 180deg);
-	   -o-transform: rotate3d(1, 1, 1, 180deg);
-	   transform: rotate3d(1, 1, 1, 180deg);
-    }
-    100% { 
-        -webkit-transform: rotate3d(1, 1, 1, 360deg);
-	   -ms-transform: rotate3d(1, 1, 1, 360deg);
-	   -o-transform: rotate3d(1, 1, 1, 360deg);
-	   transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
+        position: relative;
+        li {
+            position: absolute;
+            perspective: 500px;
+            transform-style: preserve-3d;
+            animation: spinner infinite linear;
+        }
+        #comic-4 {
+            bottom: 50%;
+            animation-duration: 5s;
+        }
 
-@-ms-keyframes spinner{
-    0% { 
-       -webkit-transform: rotate3d(1, 1, 1, 0deg);
-	   -ms-transform: rotate3d(1, 1, 1, 0deg);
-	   -o-transform: rotate3d(1, 1, 1, 0deg);
-	   transform: rotate3d(1, 1, 1, 0deg);
-    }
-    50% { 
-       -webkit-transform: rotate3d(1, 1, 1, 180deg);
-	   -ms-transform: rotate3d(1, 1, 1, 180deg);
-	   -o-transform: rotate3d(1, 1, 1, 180deg);
-	   transform: rotate3d(1, 1, 1, 180deg);
-    }
-    100% { 
-        -webkit-transform: rotate3d(1, 1, 1, 360deg);
-	   -ms-transform: rotate3d(1, 1, 1, 360deg);
-	   -o-transform: rotate3d(1, 1, 1, 360deg);
-	   transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
+        #comic-5 {
+            bottom: 30%;
+            left:30%;
+            animation-duration: 23s;
+        }
 
-@-o-keyframes spinner{
-    0% { 
-       -webkit-transform: rotate3d(1, 1, 1, 0deg);
-	   -ms-transform: rotate3d(1, 1, 1, 0deg);
-	   -o-transform: rotate3d(1, 1, 1, 0deg);
-	   transform: rotate3d(1, 1, 1, 0deg);
-    }
-    50% { 
-       -webkit-transform: rotate3d(1, 1, 1, 180deg);
-	   -ms-transform: rotate3d(1, 1, 1, 180deg);
-	   -o-transform: rotate3d(1, 1, 1, 180deg);
-	   transform: rotate3d(1, 1, 1, 180deg);
-    }
-    100% { 
-        -webkit-transform: rotate3d(1, 1, 1, 360deg);
-	   -ms-transform: rotate3d(1, 1, 1, 360deg);
-	   -o-transform: rotate3d(1, 1, 1, 360deg);
-	   transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
+        #comic-6 {
+            bottom: 30%;
+            left:80%;
+            animation-duration: 10s;
+        }
 
-@keyframes spinner{
-    0% { 
-       -webkit-transform: rotate3d(1, 1, 1, 0deg);
-	   -ms-transform: rotate3d(1, 1, 1, 0deg);
-	   -o-transform: rotate3d(1, 1, 1, 0deg);
-	   transform: rotate3d(1, 1, 1, 0deg);
-    }
-    50% { 
-       -webkit-transform: rotate3d(1, 1, 1, 180deg);
-	   -ms-transform: rotate3d(1, 1, 1, 180deg);
-	   -o-transform: rotate3d(1, 1, 1, 180deg);
-	   transform: rotate3d(1, 1, 1, 180deg);
-    }
-    100% { 
-        -webkit-transform: rotate3d(1, 1, 1, 360deg);
-	   -ms-transform: rotate3d(1, 1, 1, 360deg);
-	   -o-transform: rotate3d(1, 1, 1, 360deg);
-	   transform: rotate3d(1, 1, 1, 360deg);
+        #comic-7 {
+            top: 30%;
+            left:20%;
+            animation-duration: 8s;
+        }
+
+        #comic-8 {
+            top: 50%;
+            left:30%;
+            animation-duration: 5s;
+        }
+
+        #comic-9 {
+            top: 4%;
+            left:50%;
+            animation-duration: 10s;
+
+        }
+
+        #comic-10 {
+            bottom: 10%;
+            left:13%;
+            animation-duration: 16s;
+        }
+
+        #comic-11 {
+            bottom: 70%;
+            left: 55%;
+            animation-duration: 12s;
+        }
+
+        #comic-12 {
+            bottom: 60%;
+            left:53%;
+            animation-duration: 19s;
+        }
+
+        #comic-13 {
+            bottom: 18%;
+            left:72%;
+            animation-duration: 7s;
+
+        }
+
+        #comic-14 {
+            bottom: 19%;
+            left:68%;
+            animation-duration: 3s;
+
+        }
+
+        #comic-15 {
+            bottom: 10%;
+            left:38%;
+            animation-duration: 4s;
+        }
     }
 }

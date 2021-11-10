@@ -97,4 +97,11 @@ class ComicController extends Controller
     {
         //
     }
+
+    public function welcome()
+    {
+        $comics = Comic::all();
+        // dd($comics);
+        return view('welcome', compact('comics'));
+    }
 }
