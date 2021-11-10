@@ -1,0 +1,47 @@
+// 
+// 
+// Font
+// 
+// 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body, input, select, option, button {
+    font-family: 'Inter', sans-serif;
+}
+// 
+// 
+// List
+// 
+// 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+// 
+// 
+// common class
+// 
+// 
+.btn {
+    font-size: 1rem;
+    border: .0625rem solid #000;
+    border-radius: 50%;
+    padding: $gt--sm;
+}
+// 
+// 
+// common class
+// 
+// 
+.overflod-y--auto {
+    overflow-y: auto;
+    height: 5rem;
+   width:20rem;
+}

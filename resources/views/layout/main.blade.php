@@ -9,6 +9,8 @@
     </head>
     <body>
         @include('partials.header')
-        @yield('pageContent')
+        <main>
+            @yield('pageContent')
+        </main>
     </body>
 </html>

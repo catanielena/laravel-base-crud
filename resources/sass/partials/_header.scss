@@ -1,0 +1,23 @@
+header {
+    padding: 0 $gt--sm;
+    border-bottom: 1px solid #000;
+    .nav__list {
+        @include inlineList;
+    }
+
+    .list__item {
+        margin: 0 $gt;
+
+        &:first-child {
+            margin-right: auto;
+        }
+    }
+
+    a {
+        font-size: $txt;
+
+        &:hover {
+            color: blue;
+        }
+    }
+}

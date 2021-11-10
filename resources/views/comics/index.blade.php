@@ -18,13 +18,13 @@
             @foreach ($comics as $comic)
                 <tr>
                     <td>{{$comic->title}}</td>
-                    <td>{{$comic->description}}</td>
+                    <td >{{$comic->description}}</td>
                     <td>{{$comic->thumb}}</td>
                     <td>{{$comic->price}}&#x20AC;</td>
                     <td>{{$comic->series}}</td>
                     <td>{{$comic->sale_date}}</td>
                     <td>{{$comic->type}}</td>
-                    <td><a href="{{route('comics.show', $comic->id)}}" class="btn">view</a></td>
+                    <td class="td__btn"><a href="{{route('comics.show', $comic->id)}}" class="btn">view</a></td>
                 </tr>
             @endforeach
         </tbody>
